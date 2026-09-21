@@ -1,0 +1,33 @@
+{
+  "api": {
+    "base_url": "https://wegame.shallow.ink",
+    "merchant_path": "/api/v1/games/rocom/merchant/info",
+    "activities_path": "/api/v1/games/rocom/activities/info",
+    "timeout_seconds": 15,
+    "retries": 3
+  },
+  "state_file": "runtime/state.json",
+  "error_alert_after": 3,
+  "error_alert_cooldown_hours": 12,
+  "recipients": [
+    {
+      "id": "fly",
+      "display_name": "Fly",
+      "watch_items": [
+        "国王球"
+      ],
+      "important_activities": {
+        "include_keywords": [
+          "限时",
+          "联动",
+          "兑换",
+          "稀有"
+        ],
+        "exclude_keywords": [],
+        "notify_on_any_change": false,
+        "notify_on_first_run": false
+      },
+      "notify_errors": true
+    }
+  ]
+}
